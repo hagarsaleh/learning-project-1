@@ -1,0 +1,30 @@
+body {
+  height: 100%;
+  display: grid;
+  margin: 0;
+  grid-template-columns: 40% 60%;
+}
+body .fixed {
+  grid-column: 1;
+  position: fixed;
+  height: 100%;
+  right: 60%;
+  border: 0 auto;
+  background-color: yellow;
+}
+body .sections {
+  grid-column: 2;
+  display: grid;
+  grid-template-rows: 20rem 20rem 20rem;
+  background-color: red;
+}
+body .sections .sec1 {
+  grid-row: 1;
+  float: left;
+}
+body .sections .sec1 img {
+  display: block;
+  width: 60%;
+}
+
+/*# sourceMappingURL=main.css.map */

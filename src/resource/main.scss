@@ -1,0 +1,32 @@
+body{
+  height: 100%;
+  display: grid;
+  margin: 0;
+  grid-template-columns: 40% 60%;
+  .fixed{
+    grid-column: 1;
+    position: fixed;
+    height: 100%;
+    right: 60%;
+  //  bottom: 0%;
+    border: 0 auto;
+    background-color: yellow;
+
+  }
+  .sections{
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 20rem 20rem 20rem;
+    background-color: red;
+    .sec1{
+      grid-row:1;
+      float:left;
+      img{
+        display: block;
+        width: 60%;
+      }
+    }
+  }
+
+
+}
