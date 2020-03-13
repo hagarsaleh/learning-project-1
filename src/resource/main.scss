@@ -1,8 +1,27 @@
+
+$background:#282a36;
+$current:   #44475a;
+$selection: #44475a;
+$foreground:#f8f8f2;
+$comment:   #6272a4;
+$faded:     #bcc2cd;
+$cyan:      #8be9fd;
+$green:     #50fa7b;
+$orange:    #ffb86c;
+$pink:      #ff79c6;
+$purple:    #bd93f9;
+$red:       #ff5555;
+$yellow:    #f1fa8c;
+
 body{
+
   height: 100%;
   display: grid;
   margin: 0;
   grid-template-columns: 40% 60%;
+  h1,h2,h3,p{
+    color: white;
+  }
   .fixed{
     grid-column: 1;
     position: fixed;
@@ -10,21 +29,38 @@ body{
     right: 60%;
   //  bottom: 0%;
     border: 0 auto;
-    background-color: yellow;
+    background-color: $faded;
 
   }
   .sections{
     grid-column: 2;
     display: grid;
-    grid-template-rows: 20rem 20rem 20rem;
-    background-color: red;
+    grid-template-rows: 50rem 50rem 50rem;
+
+
+    img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40%;
+    }
+    h3{
+      display: block;
+      //float: up;
+      padding-left: 3rem;
+      padding-top:2rem;
+      padding-bottom:2rem;
+    }
     .sec1{
+
       grid-row:1;
-      float:left;
-      img{
-        display: block;
-        width: 60%;
-      }
+      background-color: $cyan;
+
+    }
+    .sec2{
+
+      grid-row:2;
+      background-color: $red;
     }
   }
 
