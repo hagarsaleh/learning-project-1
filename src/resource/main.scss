@@ -19,10 +19,19 @@ body{
   display: grid;
   margin: 0;
   grid-template-columns: 40% 60%;
+    font-family: 'Baloo 2', cursive;
+
   h1,h2,h3,p{
     color: white;
+    font-family: 'Baloo 2', cursive;
+    font-weight: lighter;
+    line-height: 1.5rem;
+  //  padding:0 10%;
+
   }
   .fixed{
+    padding: 6%;
+    padding-top: 2%;
     grid-column: 1;
     position: fixed;
     height: 100%;
@@ -30,6 +39,21 @@ body{
   //  bottom: 0%;
     border: 0 auto;
     background-color: $faded;
+    h1{
+  //    padding-left: 5rem;
+  //    padding-right: 5rem;
+    }
+    .button{
+      margin-left: 5%;
+      padding:0 3%;
+      border-radius: 100px;
+      background-color:$current;
+      line-height: 2rem;
+      font-size: 1rem;
+      height: 3rem;
+      width:10rem;
+      border:0;
+    }
 
   }
   .sections{
