@@ -1,7 +1,3 @@
-html {
-  margin: 0;
-}
-
 body {
   font-family: "Baloo 2", cursive;
   margin: 0;
@@ -55,7 +51,7 @@ body .fixed {
   background-color: #282a36;
 }
 
-@media (min-width: 600px) and (max-width: 1280px) {
+@media (min-width: 600px) {
   body {
     height: 100%;
     display: grid;
@@ -71,12 +67,6 @@ body .fixed {
     display: grid;
     grid-template-rows: 30rem 30rem 30rem;
   }
-  body .sections img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 43%;
-  }
   body .sections .sec1 {
     grid-row: 1;
   }
@@ -84,7 +74,7 @@ body .fixed {
     grid-row: 2;
   }
 }
-@media (min-width: 100em) and (max-width: 767em) {
+@media (min-width: 100px) and (max-width: 600px) {
   body {
     display: flex;
     flex-direction: column;
