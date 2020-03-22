@@ -13,9 +13,12 @@ $purple:    #bd93f9;
 $red:       #ff5555;
 $yellow:    #f1fa8c;
 
+html{
+  margin: 0;
+}
 body{
   font-family: 'Baloo 2', cursive;
-
+  margin: 0;
 h1,h2,h3,p{
   color: white;
   font-family: 'Baloo 2', cursive;
@@ -33,6 +36,12 @@ h3{
   padding-bottom:.5%;
   margin:0 auto;
 }
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 43%;
+}
 .button{
   margin-left: 5%;
   padding:0 3%;
@@ -47,7 +56,6 @@ h3{
 }
 .sec1{
   padding: 5%;
-
   background-color: $cyan;
 
 }
@@ -59,16 +67,15 @@ h3{
 .fixed{
   padding: 6%;
   padding-top: 2%;
-  grid-column: 1;
   height: 100%;
   right: 60%;
 //  bottom: 0%;
   border: 0 auto;
   background-color: $background;
 }
-}
+  }
 
-  @media  only screen and(min-width:700px) {
+  @media (min-width:600px) and (max-width:1280px) {
     body{
   height: 100%;
   display: grid;
@@ -108,7 +115,7 @@ h3{
 
 }
 }
-@media only screen and (max-width:700px){
+@media(min-width: 100em) and (max-width: 767em) {
   body{
     display:flex;
     flex-direction: column;
